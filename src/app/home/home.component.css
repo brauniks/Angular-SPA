@@ -1,0 +1,68 @@
+
+
+
+.card-header {
+  padding: 10px;
+  text-align: center;
+}
+.card-body button {
+  width: 100%;
+  margin: 2px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+.dropdownOptions {
+  padding: 0px 15px 15px;
+}
+.btn-group-vertical {
+  padding: 20px;
+}
+
+
+
+
+
+
+
+.btn-group-vertical {
+  display: block;
+}
+.radio {
+  display: block;
+  width: 100%;
+  margin: 10px;
+}
+
+@media (max-width: 991px) {
+  .dropdownOptions  {
+    display: inline-block;
+    padding: 0 30px;
+  }
+
+  }
+
+  @media (max-width: 320px) {
+    .dropdownOptions  {
+      font-size: 80%;
+      display: inline-block;
+      padding: 0 30px;
+    }
+  }
+
+.custom-radio {
+  padding: 5px 5px 0px 5px;
+  font-size: small;
+  font-style: normal;
+  font-weight: normal;
+
+}
+.configInterestText {
+  font-size: large;
+}

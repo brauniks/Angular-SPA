@@ -1,0 +1,132 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-2 col-md-offset-1">
+      <div class="row dropdownOptions">
+        <p>Kod Finansowy</p>
+        <!-- <select ng-model="agenda.selectedFinancialCode">
+					<option class="optFinance" ng-repeat="code in agenda.financeCodes" value="{{code.name}}">{{code.name}}</option>
+				</select>
+				<p>{{selectedFinancialCode}}</p> -->
+      </div>
+      <div class="row dropdownOptions">
+        <p>Kod zobowiazania</p>
+        <!-- <select ng-model="agenda.selectedCommitmentCode">
+					<option ng-repeat="code in agenda.commitmentCodes" value="{{code.name}}">{{code.name}}</option>
+				</select> -->
+      </div>
+    </div>
+
+    <div class="col-md-2">
+      <div class="card w-100">
+        <div class="card-header">Składniki</div>
+        <div dragula="Vampires" class="card-body d-block">
+          <!-- <div ng-repeat="item in agenda.elements"> -->
+          <button type="button" class="btn btn-basic">aaaaaaaaa</button>
+          <button type="button" class="btn btn-basic">aaaaaaaaa</button>
+          <button type="button" class="btn btn-basic">aaaaaaaaa</button>
+          <button type="button" class="btn btn-basic">aaaaaaaaa</button>
+          <button type="button" class="btn btn-basic">aaaaaaaaa</button>
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2 offset-1">
+      <div class="row">
+        <div class="card w-100">
+          <div class="card-header">WPS</div>
+          <div dragula="Vampires" class="card-body d-block">
+            <!-- <div ng-repeat="item in agenda.wpsElements"> -->
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="card w-100">
+          <div class="card-header">Koszta Sądowe</div>
+          <div dragula="Vampires" class="card-body d-block">
+            <!-- <div ng-repeat="item in agenda.processCostsElements"> -->
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card  w-100">
+          <div class="card-header">Koszta Egzekucyjne</div>
+          <div dragula="Vampires" class="card-body d-block">
+            <!-- <div ng-repeat="item in agenda.bailiffCostsElements"> -->
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+    <div class="col-md-2 offset-2 border border-primary">
+      <div class="row">
+          <div class="configInterestText">
+              <strong>Od czego naliczamy odsetki</strong>
+              <div class="card">
+                <div class="radio">
+                  <label>
+                    <!-- ng-model="agenda.interestElement" -->
+                    <input type="radio" name="optradio" value="WPS">WPS</label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="optradio" value="Kapitał">Kapitał</label>
+                </div>
+                <div class="radio disabled">
+                  <label>
+                    <input type="radio" name="optradio" disabled value="Coś jeszcze">Coś jeszcze</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="btn-group-vertical">
+                  <button class="btn btn-basic">Zacznij od nowa</button>
+                  <!-- ng-disabled="!agenda.isFilled()" -->
+                  <!-- ng-click="agenda.compare()" -->
+                  <button class="btn btn-primary">Porownaj</button>
+                  <button class="btn btn-success">Zatwierdz</button>
+                </div>
+              </div>
+            </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="card configuration">
+    <div class="panel card-header">Konfiguracja</div>
+    <div class="panel card-body">
+
+      <div class="col-md-2 col-md-offset-1">
+        <p>Koszta Egzekucyjne</p>
+        <div ng-repeat="item in agenda.bailiffCostsElements">
+          aaaa
+        </div>
+      </div>
+      <div class="col-md-2 col-md-offset-1">
+        <p>Koszta Sądowe</p>
+        <div ng-repeat="item in agenda.processCostsElements">
+          aaaa
+        </div>
+      </div>
+      <div class="col-md-2 col-md-offset-1">
+        <p>WPS</p>
+        <div ng-repeat="item in agenda.wpsElements">
+          aaaa
+        </div>
+      </div>
+      <div class="col-md-2 col-md-offset-1">
+        <p>Kod Zobowiązania: </p>
+        <p>Kod Finansowy: </p>
+        <p>Odsetki od: </p>
+      </div>
+
+    </div>
+  </div>
